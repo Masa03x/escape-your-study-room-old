@@ -8,13 +8,13 @@ An individual Mobile App Development project. This student wellbeing exergame tu
 
 As a student taking a study break, I want to dodge flying books by squatting so that I can move while progressing through the escape game.
 
-The first iteration follows research → concept → prototype → user test → improvements → development → another user test. Research, tests and implementation are not completed yet.
+The first iteration follows research → concept → prototype → user test → improvements → development → another user test. An initial coded prototype is now available. Research and student user tests are still pending; this prototype does not replace those steps.
 
 ## Repository structure
 
 | Location | Purpose |
 | --- | --- |
-| `app/` | Mobile application; framework setup is pending |
+| `app/` | Flutter application and automated tests |
 | `docs/features/` | Feature scope, acceptance criteria and development tasks |
 | `docs/research/` | Research questions, findings and decisions |
 | `docs/testing/` | User-test plans, observations and improvements |
@@ -30,4 +30,4 @@ Record what changed, why it changed and which real feedback or test led to that 
 
 ## Running the app
 
-There is no runnable application yet. Setup and run instructions will be added when the framework is selected and the app is scaffolded.
+See [app setup and run instructions](app/README.md). Start with the browser demo, then test experimental movement input on a physical phone.

@@ -1,6 +1,6 @@
 # First feature: Dodge flying books
 
-Status: planned; research and user testing pending.
+Status: initial Flutter source prototype written; research, user testing and full Flutter validation pending. See app/README.md for setup and limitations.
 
 Backlog: [issue #4](https://github.com/Masa03x/escape-your-study-room/issues/4).
 
