@@ -1,6 +1,6 @@
 # Escape Your Study Room
 
-An individual Mobile App Development project by Masa. This student wellbeing exergame turns a short study break into a playful escape challenge using physical movement.
+An individual Mobile App Development project. This student wellbeing exergame turns a short study break into a playful escape challenge using physical movement.
 
 ## First feature
 
