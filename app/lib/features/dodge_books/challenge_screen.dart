@@ -58,9 +58,10 @@ class _ChallengeScreenState extends State<ChallengeScreen>
           game.phase == ChallengePhase.playing &&
           !connecting) {
         final wasOpen = game.canDodge;
+        final delta = seconds.clamp(0.0, 0.1).toDouble();
         setState(() {
-          game.tick(seconds.clamp(0, 0.1));
-          sessionSeconds += seconds.clamp(0, 0.1);
+          game.tick(delta);
+          sessionSeconds += delta;
         });
         if (wasOpen && !game.canDodge) detector.reset();
       }
