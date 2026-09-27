@@ -1,6 +1,6 @@
 # First feature: Dodge flying books
 
-Status: initial Flutter source prototype written; research, user testing and full Flutter validation pending. See app/README.md for setup and limitations.
+Status: first Flutter feature flow rebuilt to match the new Figma Make visual direction; research, user testing and full local Flutter validation are still pending. See app/README.md for setup and limitations.
 
 Backlog: [issue #4](https://github.com/Masa03x/escape-your-study-room/issues/4).
 
@@ -49,8 +49,8 @@ A phone sensor measures phone movement; it cannot prove correct squat form. The 
 ## Work checklist
 
 - [ ] Answer the research questions and record sources or observations.
-- [ ] Sketch instructions, gameplay and completion screens.
-- [ ] Create an interactive concept prototype.
+- [x] Sketch/design instructions, gameplay and completion screens in the Figma Make concept.
+- [x] Create an interactive visual concept prototype.
 - [ ] Run the first user test and record real observations.
 - [ ] Improve the concept based on feedback.
 - [ ] Scaffold the mobile app.

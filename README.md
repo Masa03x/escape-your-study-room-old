@@ -2,32 +2,28 @@
 
 An individual Mobile App Development project. This student wellbeing exergame turns a short study break into a playful escape challenge using physical movement.
 
-## First feature
+## First portfolio feature
 
-[Dodge flying books through movement — issue #4](https://github.com/Masa03x/escape-your-study-room/issues/4).
+**Dodge the Flying Books**
 
-As a student taking a study break, I want to dodge flying books by squatting so that I can move while progressing through the escape game.
+> As a student taking a study break, I want to dodge flying books by squatting so that I can move while progressing through the escape game.
 
-The first iteration follows research → concept → prototype → user test → improvements → development → another user test. An initial coded prototype is now available. Research and student user tests are still pending; this prototype does not replace those steps.
+The first implementation now follows the new Figma Make visual direction. The Flutter feature includes the challenge preview, movement explanation, countdown, gameplay room, flying-book states, progress feedback, pause flow and completion screen.
+
+The implementation keeps the game/sensor logic separate from the UI so the visual design can continue to improve after user testing without rewriting the movement logic.
 
 ## Repository structure
 
 | Location | Purpose |
 | --- | --- |
-| `app/` | Flutter application and automated tests |
+| `app/` | Flutter application and tests |
 | `docs/features/` | Feature scope, acceptance criteria and development tasks |
 | `docs/research/` | Research questions, findings and decisions |
 | `docs/testing/` | User-test plans, observations and improvements |
 | `assets/` | Original game images, sounds and attribution |
 
-Start with [the first feature plan](docs/features/dodge-books.md), [research notes](docs/research/dodge-books.md) and [user-test plan](docs/testing/dodge-books.md).
-
 ## Workflow
 
-Keep the existing GitHub issues as the backlog. Link work to the relevant issue. Use a feature branch such as `feature/dodge-books` for implementation and keep `main` for reviewed work.
+Keep GitHub issues as the backlog. Use the `feature/dodge-books` branch for the first implementation and keep `main` for reviewed work.
 
-Record what changed, why it changed and which real feedback or test led to that decision. Add anonymised observations only; do not commit personal participant information.
-
-## Running the app
-
-See [app setup and run instructions](app/README.md). Start with the browser demo, then test experimental movement input on a physical phone.
+For portfolio evidence, record the sequence clearly: concept/design → first user test → design changes → Flutter implementation → physical-phone test → second user test → reflection.
