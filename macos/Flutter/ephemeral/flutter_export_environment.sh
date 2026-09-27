@@ -1,0 +1,15 @@
+#!/bin/sh
+# This is a generated file; do not edit or check into version control.
+export "FLUTTER_ROOT=/Users/masa/flutter"
+export "FLUTTER_APPLICATION_PATH=/Users/masa/Desktop/Fontys/MA-MAD1/Escape Your Study Room/escape-your-study-room"
+export "FLUTTER_FRAMEWORK_SWIFT_PACKAGE_PATH=/Users/masa/Desktop/Fontys/MA-MAD1/Escape Your Study Room/escape-your-study-room/macos/Flutter/ephemeral/Packages/.packages/FlutterFramework"
+export "COCOAPODS_PARALLEL_CODE_SIGN=true"
+export "FLUTTER_TARGET=/Users/masa/Desktop/Fontys/MA-MAD1/Escape Your Study Room/escape-your-study-room/lib/main.dart"
+export "FLUTTER_BUILD_DIR=build"
+export "FLUTTER_BUILD_NAME=1.0.0"
+export "FLUTTER_BUILD_NUMBER=1"
+export "DART_DEFINES=RkxVVFRFUl9CVUlMRF9OQU1FPTEuMC4w,RkxVVFRFUl9CVUlMRF9OVU1CRVI9MQ==,RkxVVFRFUl9WRVJTSU9OPTMuNDcuNA==,RkxVVFRFUl9DSEFOTkVMPXN0YWJsZQ==,RkxVVFRFUl9HSVRfVVJMPWh0dHBzOi8vZ2l0aHViLmNvbS9mbHV0dGVyL2ZsdXR0ZXIuZ2l0,RkxVVFRFUl9GUkFNRVdPUktfUkVWSVNJT049OTU4NGM2NzEzYg==,RkxVVFRFUl9FTkdJTkVfUkVWSVNJT049MDZhMmUyYTExMA==,RkxVVFRFUl9EQVJUX1ZFUlNJT049My4xMy4z"
+export "DART_OBFUSCATION=false"
+export "TRACK_WIDGET_CREATION=true"
+export "TREE_SHAKE_ICONS=false"
+export "PACKAGE_CONFIG=/Users/masa/Desktop/Fontys/MA-MAD1/Escape Your Study Room/escape-your-study-room/.dart_tool/package_config.json"
