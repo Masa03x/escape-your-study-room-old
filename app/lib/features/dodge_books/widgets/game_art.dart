@@ -107,7 +107,7 @@ class _FlyingBookPainter extends CustomPainter {
     );
 
     canvas.drawOval(
-      const Rect.fromCenter(center: Offset(44, 65), width: 52, height: 48),
+      Rect.fromCenter(center: Offset(44, 65), width: 52, height: 48),
       Paint()..color = const Color(0xFFFEF2F2),
     );
 
@@ -127,8 +127,8 @@ class _FlyingBookPainter extends CustomPainter {
 
   void _paintAngry(Canvas canvas) {
     final dark = Paint()..color = const Color(0xFF1F2937);
-    canvas.drawOval(const Rect.fromCenter(center: Offset(36, 60), width: 10, height: 10), dark);
-    canvas.drawOval(const Rect.fromCenter(center: Offset(52, 60), width: 10, height: 10), dark);
+    canvas.drawOval(Rect.fromCenter(center: Offset(36, 60), width: 10, height: 10), dark);
+    canvas.drawOval(Rect.fromCenter(center: Offset(52, 60), width: 10, height: 10), dark);
     canvas.drawCircle(const Offset(37, 58.5), 1.8, Paint()..color = Colors.white);
     canvas.drawCircle(const Offset(53, 58.5), 1.8, Paint()..color = Colors.white);
     final stroke = Paint()
@@ -143,11 +143,11 @@ class _FlyingBookPainter extends CustomPainter {
       ..quadraticBezierTo(44, 70, 55, 75);
     canvas.drawPath(mouth, stroke..strokeWidth = 2.5);
     canvas.drawOval(
-      const Rect.fromCenter(center: Offset(29, 68), width: 10, height: 6),
+      Rect.fromCenter(center: Offset(29, 68), width: 10, height: 6),
       Paint()..color = AppColors.red.withValues(alpha: 0.28),
     );
     canvas.drawOval(
-      const Rect.fromCenter(center: Offset(59, 68), width: 10, height: 6),
+      Rect.fromCenter(center: Offset(59, 68), width: 10, height: 6),
       Paint()..color = AppColors.red.withValues(alpha: 0.28),
     );
     final arm = Paint()
@@ -162,11 +162,11 @@ class _FlyingBookPainter extends CustomPainter {
 
   void _paintScared(Canvas canvas) {
     final dark = Paint()..color = const Color(0xFF1F2937);
-    canvas.drawOval(const Rect.fromCenter(center: Offset(36, 60), width: 11, height: 12), dark);
-    canvas.drawOval(const Rect.fromCenter(center: Offset(52, 60), width: 11, height: 12), dark);
+    canvas.drawOval(Rect.fromCenter(center: Offset(36, 60), width: 11, height: 12), dark);
+    canvas.drawOval(Rect.fromCenter(center: Offset(52, 60), width: 11, height: 12), dark);
     canvas.drawCircle(const Offset(37, 57), 2, Paint()..color = Colors.white);
     canvas.drawCircle(const Offset(53, 57), 2, Paint()..color = Colors.white);
-    canvas.drawOval(const Rect.fromCenter(center: Offset(44, 75), width: 14, height: 10), dark);
+    canvas.drawOval(Rect.fromCenter(center: Offset(44, 75), width: 14, height: 10), dark);
   }
 
   void _paintDizzy(Canvas canvas) {
@@ -259,7 +259,7 @@ class _StudentPainter extends CustomPainter {
     canvas.save();
     canvas.scale(size.width / 58, size.height / 84);
     canvas.drawOval(
-      const Rect.fromCenter(center: Offset(29, 83), width: 36, height: 8),
+      Rect.fromCenter(center: Offset(29, 83), width: 36, height: 8),
       Paint()..color = Colors.black.withValues(alpha: 0.35),
     );
     final jeans = Paint()
@@ -268,8 +268,8 @@ class _StudentPainter extends CustomPainter {
       ..strokeCap = StrokeCap.round;
     canvas.drawLine(const Offset(22, 57), const Offset(17, 77), jeans);
     canvas.drawLine(const Offset(36, 57), const Offset(42, 77), jeans);
-    canvas.drawOval(const Rect.fromCenter(center: Offset(16, 79), width: 18, height: 9), Paint()..color = const Color(0xFF1F2937));
-    canvas.drawOval(const Rect.fromCenter(center: Offset(43, 79), width: 18, height: 9), Paint()..color = const Color(0xFF1F2937));
+    canvas.drawOval(Rect.fromCenter(center: Offset(16, 79), width: 18, height: 9), Paint()..color = const Color(0xFF1F2937));
+    canvas.drawOval(Rect.fromCenter(center: Offset(43, 79), width: 18, height: 9), Paint()..color = const Color(0xFF1F2937));
     canvas.drawRRect(
       RRect.fromRectAndRadius(const Rect.fromLTWH(14, 25, 30, 34), const Radius.circular(6)),
       Paint()..color = AppColors.purple,
@@ -301,8 +301,8 @@ class _StudentPainter extends CustomPainter {
       ..quadraticBezierTo(18, 9, 15, 13);
     canvas.drawPath(hair, Paint()..color = const Color(0xFF1F2937));
     final face = Paint()..color = const Color(0xFF1F2937);
-    canvas.drawOval(const Rect.fromCenter(center: Offset(24, 16), width: 5.6, height: 6), face);
-    canvas.drawOval(const Rect.fromCenter(center: Offset(34, 16), width: 5.6, height: 6), face);
+    canvas.drawOval(Rect.fromCenter(center: Offset(24, 16), width: 5.6, height: 6), face);
+    canvas.drawOval(Rect.fromCenter(center: Offset(34, 16), width: 5.6, height: 6), face);
     final mouth = Paint()
       ..color = const Color(0xFF1F2937)
       ..style = PaintingStyle.stroke
@@ -314,7 +314,7 @@ class _StudentPainter extends CustomPainter {
         ..quadraticBezierTo(29, 27, 36, 22);
       canvas.drawPath(p, mouth);
     } else {
-      canvas.drawOval(const Rect.fromCenter(center: Offset(29, 22), width: 8, height: 7), Paint()..color = AppColors.red);
+      canvas.drawOval(Rect.fromCenter(center: Offset(29, 22), width: 8, height: 7), Paint()..color = AppColors.red);
     }
     canvas.restore();
   }
@@ -323,7 +323,7 @@ class _StudentPainter extends CustomPainter {
     canvas.save();
     canvas.scale(size.width / 90, size.height / 72);
     canvas.drawOval(
-      const Rect.fromCenter(center: Offset(45, 71), width: 56, height: 10),
+      Rect.fromCenter(center: Offset(45, 71), width: 56, height: 10),
       Paint()..color = Colors.black.withValues(alpha: 0.35),
     );
     final jeans = Paint()
@@ -339,8 +339,8 @@ class _StudentPainter extends CustomPainter {
       ..quadraticBezierTo(63, 56, 73, 65);
     canvas.drawPath(leftLeg, jeans);
     canvas.drawPath(rightLeg, jeans);
-    canvas.drawOval(const Rect.fromCenter(center: Offset(10, 66), width: 22, height: 10), Paint()..color = const Color(0xFF1F2937));
-    canvas.drawOval(const Rect.fromCenter(center: Offset(74, 66), width: 22, height: 10), Paint()..color = const Color(0xFF1F2937));
+    canvas.drawOval(Rect.fromCenter(center: Offset(10, 66), width: 22, height: 10), Paint()..color = const Color(0xFF1F2937));
+    canvas.drawOval(Rect.fromCenter(center: Offset(74, 66), width: 22, height: 10), Paint()..color = const Color(0xFF1F2937));
     canvas.drawRRect(
       RRect.fromRectAndRadius(const Rect.fromLTWH(24, 22, 34, 24), const Radius.circular(6)),
       Paint()..color = AppColors.purple,
@@ -366,8 +366,8 @@ class _StudentPainter extends CustomPainter {
       ..quadraticBezierTo(31, 8, 28, 12);
     canvas.drawPath(hair, Paint()..color = const Color(0xFF1F2937));
     final face = Paint()..color = const Color(0xFF1F2937);
-    canvas.drawOval(const Rect.fromCenter(center: Offset(36, 14), width: 5.6, height: 5.6), face);
-    canvas.drawOval(const Rect.fromCenter(center: Offset(46, 14), width: 5.6, height: 5.6), face);
+    canvas.drawOval(Rect.fromCenter(center: Offset(36, 14), width: 5.6, height: 5.6), face);
+    canvas.drawOval(Rect.fromCenter(center: Offset(46, 14), width: 5.6, height: 5.6), face);
     final smile = Path()
       ..moveTo(34, 20)
       ..quadraticBezierTo(41, 24, 48, 20);
@@ -426,8 +426,8 @@ class _DefeatedBookPainter extends CustomPainter {
       Paint()..color = spineColor,
     );
     final eyePaint = Paint()..color = const Color(0xFFFEF2F2);
-    canvas.drawOval(const Rect.fromCenter(center: Offset(35, 36), width: 28, height: 24), eyePaint);
-    canvas.drawOval(const Rect.fromCenter(center: Offset(65, 36), width: 28, height: 24), eyePaint);
+    canvas.drawOval(Rect.fromCenter(center: Offset(35, 36), width: 28, height: 24), eyePaint);
+    canvas.drawOval(Rect.fromCenter(center: Offset(65, 36), width: 28, height: 24), eyePaint);
     final x = Paint()
       ..color = spineColor
       ..strokeWidth = 2.5
