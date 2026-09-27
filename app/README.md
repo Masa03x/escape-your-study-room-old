@@ -1,7 +1,61 @@
-# Mobile app
+# Escape Your Study Room — Flutter app
 
-Application setup is pending confirmation of the framework. No runnable app or sensor detection is implemented yet.
+This folder contains the first implemented feature for the individual Mobile App Development project:
 
-The first implementation will cover the flow in [issue #4](https://github.com/Masa03x/escape-your-study-room/issues/4): instructions, a flying-book challenge, movement feedback and a clear ending.
+**Dodge the Flying Books**
 
-Keep movement detection separate from game progress so detection can be tested and adjusted without rewriting the interface. Any simulated movement control must be clearly labelled as a development tool and must not be presented as working sensor detection.
+Current feature flow:
+
+1. Challenge preview
+2. 3-2-1 countdown
+3. Flying-books gameplay
+4. Squat/movement detection
+5. Pause, resume and restart
+6. 5/5 completion screen
+
+## Project structure
+
+```text
+app/
+├── lib/
+│   ├── main.dart
+│   ├── core/
+│   │   └── theme/
+│   │       └── app_theme.dart
+│   └── features/
+│       └── dodge_books/
+│           ├── challenge.dart
+│           ├── challenge_screen.dart
+│           └── widgets/
+│               ├── game_art.dart
+│               ├── progress_segments.dart
+│               └── study_room.dart
+├── test/
+│   └── challenge_test.dart
+├── analysis_options.yaml
+├── pubspec.yaml
+└── pubspec.lock
+```
+
+## First local setup
+
+The repository stores the app source and dependencies, but generated Flutter platform folders are intentionally not tracked yet.
+
+From the repository root:
+
+```bash
+cd app
+flutter create . --project-name escape_your_study_room
+flutter pub get
+flutter analyze
+flutter test
+```
+
+Then run the app with a connected device:
+
+```bash
+flutter devices
+flutter run -d <device-id>
+```
+
+On iOS/Android the feature uses `sensors_plus` for movement input. On desktop/web, the interface can be used for visual development and testing without presenting simulated input as real sensor detection.
